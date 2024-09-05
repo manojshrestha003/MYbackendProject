@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+logs/
+
+# Dependency directories
+jspm_packages/
+
+# Build output
+dist/
+build/
+
+# Temporary files
+*.tmp
+*.temp
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# IDE-specific files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# Prettier configuration
+.prettierignore
+.prettierrc
+
+# NPM package lock file (if you want to ignore it; generally, it’s good practice to include it)
+# package-lock.json
+
+# Yarn lock file (if using Yarn)
+yarn.lock
