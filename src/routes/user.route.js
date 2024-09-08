@@ -1,6 +1,6 @@
 import { Router } from 'express';
 import { upload } from '../middlewares/multer.middleware.js';
-import { changePassword, getCurrentUser, getUserChannelProfile, getwatchHistory, loginUser, logoutUser, refreshAccessToken, registerUser, updataAvatar, updateAccountDetails, updateCoverImage } from '../controllers/user.controller.js';
+import { changePassword,  getCurrentUser, getUserChannelProfile, getwatchHistory, loginUser, logoutUser, refreshAccessToken, registerUser, updataAvatar, updateAccountDetails, updateCoverImage } from '../controllers/user.controller.js';
 import { updatethumbnail, uploadVideo } from '../controllers/video.controller.js';
 
 
