@@ -5,7 +5,7 @@ import { updatethumbnail, uploadVideo } from '../controllers/video.controller.js
 
 
 
-
+//Define Routes for different components 
 const router = Router();
 
 router.route('/register').post(
