@@ -8,12 +8,12 @@ const uploadVideo = AsyncHandler(async (req, res) => {
     const { title, description, duration, isPublished } = req.body;
 
     //video File 
-    const videoLocalPath = req.files?.videoFile?.[0]?.path;  
+    const videoLocalPath = req.files?.videoFile?.[0]?.path;  //video local path 
     if (!videoLocalPath) {
         throw new ApiError(400, "Video file is required");
     }
   //thumbnail file 
-    const thumbnailLocalPath = req.files?.thumbnail?.[0]?.path;  
+    const thumbnailLocalPath = req.files?.thumbnail?.[0]?.path;  //Thumbnail local path 
     if (!thumbnailLocalPath) {
         throw new ApiError(400, "Thumbnail file is required");
     }
@@ -45,7 +45,7 @@ const uploadVideo = AsyncHandler(async (req, res) => {
         throw new ApiError(500, "Failed to fetch created video");
     }
 
-    // Send response
+    // Send response 
     return res.status(201).json(new ApiResponse(201, createdVideo, "Video created successfully"));
 }); 
 
