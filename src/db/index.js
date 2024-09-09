@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+//connect  to the database  moogoose.connect 
 
 const connectDB = async () => {
   try {
