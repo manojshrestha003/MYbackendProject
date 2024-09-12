@@ -1,7 +1,9 @@
+//auth middleware 
 import { ApiError } from '../utils/ApiError';
 import { AsyncHandler } from '../utils/AsyncHandler';
 import jwt from 'jsonwebtoken';
 import { User } from '../models/Users.model';
+
 
 export const verifyJWT = AsyncHandler(async (req, res, next) => {
     try {
